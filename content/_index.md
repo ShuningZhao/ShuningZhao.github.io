@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Shuning ZHAO (赵舒宁)
+title: Shuning ZHAO
 date: 2022-10-24
 type: landing
 
@@ -47,7 +47,7 @@ sections:
           - publication
         featured_only: true
     design:
-      columns: '1'
+      columns: '2'
       view: card
   - block: collection
     content:

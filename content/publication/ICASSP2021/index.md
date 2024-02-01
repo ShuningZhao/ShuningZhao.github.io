@@ -17,7 +17,7 @@ abstract: In authentication scenarios, applications of practical speaker
 slides: ""
 url_pdf: https://arxiv.org/pdf/2105.09022
 publication_types:
-  - "1"
+  - "Conference"
 authors:
   - Weiyi Zhang
   - admin

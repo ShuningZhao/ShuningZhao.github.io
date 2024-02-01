@@ -97,8 +97,8 @@ sections:
         - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '39.9967869'
-        longitude: '116.3289186'  
+        latitude: '40.002437'
+        longitude: '116.338753'  
       # Automatically link email and phone or display as text?
       autolink: true
       # Email form provider

@@ -23,10 +23,10 @@ social:
     icon_pack: fab
     link: https://www.linkedin.com/in/shuning-zhao-38405544/
 organizations:
-  - name: Data Science and AI Association of Australia
-    url: www.dsai.org.au
   - name: Tsinghua University
     url: https://www.tsinghua.edu.cn/en/
+  - name: Promptlaw
+    url: www.promptlaw.com.au
 education:
   courses:
     - course: Ph.D. in Artificial Intelligence
@@ -46,7 +46,7 @@ highlight_name: true
 first_name: Shuning
 email: firstname.lastname@dsai.org.au
 ---
-I am a Ph.D. Candidate from the [Department of Computer Science and Technology](https://www.cs.tsinghua.edu.cn/csen/), [Tsinghua University](https://www.tsinghua.edu.cn/en/) under the supervision of [Prof. Xiaolin Hu](http://www.xlhu.cn/). I am a member of the [Tsinghua Statistical Artificial Intelligence & Learning (TSAIL)](https://ml.cs.tsinghua.edu.cn/) Group. My research interests include the application of artificial intelligence and machine learning in finance, insurance, speech, and audio processing. I am also currently the vice-president of the [Data Science and AI Association of Australia (DSAI)](www.dsai.org.au).
+I am a Ph.D. Candidate from the [Department of Computer Science and Technology](https://www.cs.tsinghua.edu.cn/csen/), [Tsinghua University](https://www.tsinghua.edu.cn/en/) under the supervision of [Prof. Xiaolin Hu](http://www.xlhu.cn/). I am a member of the [Tsinghua Statistical Artificial Intelligence & Learning (TSAIL)](https://ml.cs.tsinghua.edu.cn/) Group. My research interests include the application of artificial intelligence and machine learning in finance, insurance, speech, and audio processing. I am also the co-foudner of [Promptlaw](www.promptlaw.com.au), an legal AI startup aimed at making legal services more accessible and affordable with the power of AI.
 
-I have over 8 years of industrial experience in data science, actuarial, and managerial roles in multinational corporations across Australia and the surrounding regions.
+Prior to my PhD, I had over 8 years of industrial experience in data science, actuarial, and managerial roles in multinational corporations across Australia and the surrounding regions.
 {style="text-align: justify;"}

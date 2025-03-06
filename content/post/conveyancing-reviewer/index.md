@@ -12,7 +12,8 @@ tags:
   - Legal AI
 categories:
   - Announcements
-projects: conveyancing-reviewer
+projects:
+  - conveyancing-reviewer
 ---
 <!--StartFragment-->
 

@@ -81,7 +81,7 @@ sections:
       text: |-
         Please feel free to contact me for any questions.
       # Contact (add or remove contact options as necessary)
-      email: \{firstname\}@promptlaw.com.au
+      email: \{firstname}@promptlaw.com.au
       phone: +61 2 8386 8592
       appointment_url: 'https://calendly.com'
       address:

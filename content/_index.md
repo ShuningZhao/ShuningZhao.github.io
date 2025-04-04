@@ -83,22 +83,22 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: '{firstname}@promptlaw.com.au'
       phone: +61 2 8386 8592
-      appointment_url: 'https://calendly.com'
+      appointment_url: 'https://calendly.com/shuning-promptlaw'
       address:
-        street: Department of Computer Science and Technology, Tsinghua University
-        city: Haidian District
-        region: Beijing
-        postcode: '100086'
-        country: China
-        country_code: CN
-      #directions: ROOM 508-4
+        street: 10 Help Street
+        city: Chatswood
+        region: New South Wales
+        postcode: '2067'
+        country: Australia
+        country_code: AU
+      directions: Suite 904
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '39.99560'
-        longitude: '116.32515'  
+        latitude: '33.7962542'
+        longitude: '151.1766637'  
       # Automatically link email and phone or display as text?
       autolink: true
       # Email form provider

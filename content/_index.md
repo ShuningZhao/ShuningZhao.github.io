@@ -85,19 +85,19 @@ sections:
       phone: +61 2 8386 8592
       appointment_url: 'https://calendly.com/shuning-promptlaw'
       address:
-        street: 10 Help Street
+        street: Suite 904, 10 Help Street
         city: Chatswood
         region: New South Wales
         postcode: '2067'
         country: Australia
         country_code: AU
-      directions: Suite 904
+      directions: Opposite Westfield Side of Chatswood Station.
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '33.7962542'
+        latitude: '-33.7962542'
         longitude: '151.1766637'  
       # Automatically link email and phone or display as text?
       autolink: true

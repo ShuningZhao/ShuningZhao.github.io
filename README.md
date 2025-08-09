@@ -1,50 +1,172 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# Shuning Zhao – Personal Academic & Project Website
 
-[![Screenshot](./preview.png)](https://hugoblox.com/templates/)
+This repository contains the source for my personal academic website built with **Hugo Blox Builder (Academic theme)**.
 
-The Hugo **Academic Resumé Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+Live site: (update after deployment)  
+Hugo version: 0.119.0 (see Netlify/GitHub Actions config)
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+## Features
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+- Academic CV style landing page
+- Publications (imported from BibTeX; see `content/publication/`)
+- Projects (e.g. Conveyancing Contract Reviewer)
+- Talks & Events
+- Blog posts
+- Multilingual-ready
+- Automatic build & deploy via GitHub Pages workflow (`.github/workflows/publish.yaml`) or Netlify (`netlify.toml`)
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+## Repository Structure (selected)
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+- `content/` — Markdown content (posts, publications, events, authors, projects)
+- `config/_default/` — Core configuration:
+  - Site: [config/_default/hugo.yaml](config/_default/hugo.yaml)
+  - Params/UI: [config/_default/params.yaml](config/_default/params.yaml)
+  - Menus: [config/_default/menus.yaml](config/_default/menus.yaml)
+  - Modules: [config/_default/module.yaml](config/_default/module.yaml)
+- `data/` — Extra data (e.g. [data/page_sharer.toml](data/page_sharer.toml))
+- `assets/` — Pipeline assets (custom CSS/JS if added)
+- `static/` — Static files served as-is (uploads, images)
+- `theme.toml` — Theme metadata
+- Workflows: `.github/workflows/`
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+## Prerequisites
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+- Go (for Hugo Modules) — currently `go 1.15` declared in [go.mod](go.mod) (you may upgrade locally if desired)
+- Hugo Extended v0.119.0
 
-## We ask you, humbly, to support this open source movement
+Verify:
+```
+hugo version
+go version
+```
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+## Getting Started (Local Development)
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+```
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+hugo mod tidy        # Ensure modules resolved
+hugo server -D       # -D includes drafts
+```
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+Visit: http://localhost:1313
 
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
+## Adding Content
 
-## Demo image credits
+Create a new blog post:
+```
+hugo new content/post/my-new-post/index.md
+```
 
-- [Unsplash](https://unsplash.com)
+Create a project:
+```
+hugo new content/project/my-project/index.md
+```
 
-## Latest news
+Create a publication manually:
+```
+hugo new content/publication/short-slug/index.md
+```
 
-<!--START_SECTION:news-->
+Or import from a BibTeX file (`publications.bib`) — commit/update the file and the workflow [Import Publications From Bibtex](.github/workflows/import-publications.yml) will open a PR.
 
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+## Drafts vs Published
+
+Front matter:
+```
+draft: true   # not published
+draft: false  # published
+```
+
+## Updating Base URL
+
+Set production URL in [config/_default/hugo.yaml](config/_default/hugo.yaml):
+```
+baseURL: 'https://your-domain.example/'
+```
+
+For Netlify, the build command in [netlify.toml](netlify.toml) injects `-b $URL`.
+
+## Deployment Options
+
+### GitHub Pages
+Automatic via [publish workflow](.github/workflows/publish.yaml):
+- Push to `main`
+- Workflow builds with Hugo and deploys to GitHub Pages environment
+
+### Netlify
+Add repository in Netlify UI. Netlify reads [netlify.toml](netlify.toml).
+
+Local production build test:
+```
+hugo --gc --minify
+```
+Output in `public/` (ignored by git per [.gitignore](.gitignore)).
+
+## Customization
+
+- Navigation: [config/_default/menus.yaml](config/_default/menus.yaml)
+- Homepage sections: [content/_index.md](content/_index.md)
+- Author profile: [content/authors/admin/_index.md](content/authors/admin/_index.md)
+- Social share buttons: [data/page_sharer.toml](data/page_sharer.toml)
+- Theme appearance & analytics: [config/_default/params.yaml](config/_default/params.yaml)
+
+## Adding Custom Styling
+
+Create a file such as:
+```
+assets/css/custom.css
+```
+Then reference via site params or (for Reveal slides) `assets/css/reveal_custom.css` (example shown in slides content).
+
+## Publications
+
+Each publication folder includes:
+- `index.md` (front matter + abstract)
+- Optional `cite.bib` for BibTeX citation
+
+Example: [content/publication/ICASSP2021/](content/publication/ICASSP2021/)
+
+## Slides
+
+Reveal.js slides: [content/slides/example/index.md](content/slides/example/index.md)
+
+Serve locally and open the slide page URL.
+
+## Contact Form
+
+Configured in homepage contact block using Netlify form processing. Ensure:
+```
+form:
+  provider: netlify
+```
+in the block at [content/_index.md](content/_index.md). Netlify will auto-detect on deploy.
+
+## Updating Hugo Modules
+
+```
+hugo mod get -u ./...
+hugo mod tidy
+```
+
+Commit resulting `go.mod` changes.
+
+## License
+
+Site theme licensed under MIT — see [LICENSE.md](LICENSE.md). Content (publications, posts, images) is owned by the author (adjust license notice in [config/_default/params.yaml](config/_default/params.yaml) if needed).
+
+## Todo / Ideas
+
+- Set real `baseURL`
+- Add Google Analytics / Clarity IDs
+- Enable math (`features.math.enable: true` in [config/_default/params.yaml](config/_default/params.yaml)) if required
+- Add resume PDF to `static/uploads/` and uncomment menu entry
+- Configure repository URL in params for "Edit this page" links
+
+## Support
+
+Theme docs: https://docs.hugoblox.com  
+Community Discord: https://discord.gg/z8wNYzb
+
+---
+Generated from the original Academic theme README and customized for this personal

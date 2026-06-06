@@ -27,12 +27,11 @@ authors:
   - Thomas Fang Zheng
   - Xiaolin Hu
 author_notes: []
-publication: ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech
-  and Signal Processing (ICASSP)
+publication: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
 summary: ""
 url_dataset: ""
 url_project: ""
-publication_short: ICASSP
+publication_short: ""
 url_source: ""
 url_video: ""
 title: Attack on practical speaker verification system using universal

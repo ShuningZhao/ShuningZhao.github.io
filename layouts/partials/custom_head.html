@@ -1,0 +1,5 @@
+{{ $icon := resources.GetMatch "media/icon.png" }}
+{{ with $icon }}
+  {{ $dark_icon := .Fill "32x32 Center" | images.Filter (images.Brightness 100) }}
+  <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" href="{{ $dark_icon.RelPermalink }}" />
+{{ end }}

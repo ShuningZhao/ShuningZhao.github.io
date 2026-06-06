@@ -29,10 +29,9 @@ tags: []
 image:
   caption: ""
   focal_point: Right
-  filename: ""
+  filename: "banner.gif"
 url_code: ""
 ---
-![](https://sparkfestival.co/assets/Uploads/Post-event-Website-Banner-Spark-Festival-2022-1200-x-628.png)
 ## Artificial Intelligence and Data Science in Businesses
 
 There is a disconnect between business’s understanding of becoming AI and data driven and the reality. Businesses think data science is the one step solution to all data problems to become AI driven. However in reality, it requires much more and a much bigger team of different expertise, not just data scientists to truly harness the power of data and AI.

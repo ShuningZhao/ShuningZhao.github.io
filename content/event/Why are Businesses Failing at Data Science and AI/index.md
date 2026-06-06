@@ -29,7 +29,7 @@ tags: []
 image:
   caption: ""
   focal_point: Right
-  filename: https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F49198252%2F245620971032%2F1%2Foriginal.jpg?auto=compress&s=add4b136a890b44fb7adf17038169781
+  filename: ""
 url_code: ""
 ---
 ![](https://sparkfestival.co/assets/Uploads/Post-event-Website-Banner-Spark-Festival-2022-1200-x-628.png)

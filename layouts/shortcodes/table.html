@@ -1,0 +1,43 @@
+{{/* Table Shortcode for Hugo Blox Builder. */}}
+{{/* Compatibility override for Hugo versions where getCSV has been removed. */}}
+
+{{ $src := .Get "path" }}
+{{ $delimiter := .Get "delimiter" | default "," }}
+{{ $useHeaderRow := (eq (lower (.Get "header")) "true") | default true }}
+{{ $caption := .Get "caption" }}
+
+{{ $options := dict "delimiter" $delimiter }}
+{{ $resource := false }}
+{{ if strings.HasPrefix $src "http" }}
+  {{ $resource = resources.GetRemote $src }}
+{{ else }}
+  {{ $resource = .Page.Resources.Get $src }}
+{{ end }}
+{{ $rows := slice }}
+{{ with $resource }}
+  {{ $rows = transform.Unmarshal $options . }}
+{{ else }}
+  {{ errorf "The table shortcode could not find CSV resource %q in %q" $src $.Page.Path }}
+{{ end }}
+
+<table class="table">
+  {{ if $useHeaderRow }}
+    {{ $headerRow := index $rows 0 }}
+    {{ $rows = after 1 $rows }}
+    <tr> {{ range $headerRow }} <th>{{ . | markdownify | emojify }}</th> {{ end }} </tr>
+  {{ end }}
+  {{ range $rows }}
+    <tr>
+      {{ range . }}
+        {{ if (findRE "^\\d+$" .) }}
+          <td data-table-dtype="number">{{ . }}</td>
+        {{ else }}
+          <td data-table-dtype="text">{{ . | markdownify | emojify }}</td>
+        {{ end }}
+      {{ end }}
+    </tr>
+  {{ end }}
+  {{ if $caption }}
+    <caption>{{ $caption | markdownify | emojify }}</caption>
+  {{ end }}
+</table>

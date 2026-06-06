@@ -20,7 +20,7 @@ publishDate: 2023-08-23T03:47:17.583Z
 draft: false
 featured: false
 image:
-  filename: https://img.e-chinaedu.cn/uploadfile/1/2023/0505/168327245637fab4.png
+  filename: ""
   focal_point: Smart
   preview_only: false
 ---

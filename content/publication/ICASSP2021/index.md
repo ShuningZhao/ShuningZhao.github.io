@@ -38,7 +38,12 @@ title: Attack on practical speaker verification system using universal
   adversarial perturbations
 doi: ""
 featured: true
-tags: []
+tags:
+  - Audio AI
+  - Speaker Verification 
+  - Adversarial Attacks 
+  - Physical Attack
+  - Model Robustness
 projects: []
 image:
   caption: ""

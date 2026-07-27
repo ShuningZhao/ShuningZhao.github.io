@@ -42,7 +42,8 @@
               <rt>{{ $person.name_pronunciation }}</rt>
             </ruby>
           {{- else -}}
-            {{- $person_page.Title -}}
+            {{/* Break onto a second line before a trailing parenthetical, e.g. a Chinese name. */}}
+            {{- replaceRE `\s*[(（]\s*([^)）]+?)\s*[)）]\s*$` "<br>（$1）" $person_page.Title | safeHTML -}}
           {{- end -}}
         </h2>
 

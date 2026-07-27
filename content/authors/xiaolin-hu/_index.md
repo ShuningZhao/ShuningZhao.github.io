@@ -16,9 +16,9 @@ interests:
 social:
   - display:
       header: false
-    link: http://www.xlhu.cn/
+    link: https://www.xlhu.cn/
     icon_pack: fas
-    icon: envelope
+    icon: globe
   - display:
       header: false
     link: https://scholar.google.com/citations?user=PksdgoUAAAAJ&hl=en

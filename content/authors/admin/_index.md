@@ -1,6 +1,6 @@
 ---
 title: Shuning Zhao (赵舒宁）
-role: Ph.D. Candidate
+role: Ph.D. Candidate - Department of Computer Science and Technology, Tsinghua University
 avatar_filename: avatar.jpg
 bio: My research interests include the application of Artificial Intelligence
   and Machine Learning in Finance, Insurance, Speech, and Audio domains.

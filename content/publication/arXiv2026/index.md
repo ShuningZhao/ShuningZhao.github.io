@@ -21,7 +21,7 @@ publication_types:
   - "Preprint"
 authors:
   - admin
-  - Patrick Wong
+  - patrick-wong
   - Leran Zhang
   - Xiaolin Hu
 author_notes: []

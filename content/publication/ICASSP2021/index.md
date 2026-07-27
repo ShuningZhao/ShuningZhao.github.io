@@ -32,7 +32,7 @@ summary: ""
 url_dataset: ""
 url_project: ""
 publication_short: ""
-url_source: ""
+url_source: https://ieeexplore.ieee.org/document/9413467/
 url_video: ""
 title: Attack on practical speaker verification system using universal
   adversarial perturbations

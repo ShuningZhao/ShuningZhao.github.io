@@ -1,0 +1,11 @@
+// Override this file to add your own SCSS styling.
+
+// Card thumbnails: show the whole image instead of cropping it to a fixed height.
+// The theme's `.article-banner` pins height to 260px/310px with `object-fit: cover`,
+// which crops tall or wide figures. Letting the height follow the aspect ratio keeps
+// wide plots and diagrams fully visible.
+.view-card .article-banner-uncropped {
+  height: auto;
+  max-height: 310px;
+  object-fit: contain;
+}

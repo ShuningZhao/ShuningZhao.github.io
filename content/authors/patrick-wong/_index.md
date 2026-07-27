@@ -18,6 +18,11 @@ social:
     link: https://scholar.google.com/citations?user=kceK35kAAAAJ&hl=en
     icon: graduation-cap
     icon_pack: fas
+  - display:
+      header: false
+    link: https://orcid.org/0000-0002-6164-901X
+    icon: orcid
+    icon_pack: fab
 superuser: false
 ---
 Patrick Wong is a Lecturer (Assistant Professor) in the Department of Econometrics and Business Statistics at Monash Business School, Monash University.

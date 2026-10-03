@@ -46,6 +46,9 @@ sections:
         folders:
           - publication
         featured_only: true
+      # Always show the "See all publications" link
+      archive:
+        enable: true
     design:
       columns: '2'
       view: card
@@ -60,6 +63,8 @@ sections:
         folders:
           - publication
         exclude_featured: true
+      archive:
+        enable: true
     design:
       columns: '2'
       view: citation
